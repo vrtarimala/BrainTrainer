@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             option4.setText((n1+n2)+"");option1.setText(randomNumber.nextInt(200)+2+"");option2.setText(randomNumber.nextInt(200)+2+"");option3.setText(randomNumber.nextInt(200)+2+"");
         }
 
-        new CountDownTimer(5000,1000){
+        new CountDownTimer(30000,1000){
             @Override
             public void onTick(long millisUntilFinished) {
                 String s;
