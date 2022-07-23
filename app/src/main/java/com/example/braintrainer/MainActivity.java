@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             option4.setText((n1+n2)+"");option1.setText(randomNumber.nextInt(200)+2+"");option2.setText(randomNumber.nextInt(200)+2+"");option3.setText(randomNumber.nextInt(200)+2+"");
         }
 
-        new CountDownTimer(30000,1000){
+        new CountDownTimer(5000,1000){
             @Override
             public void onTick(long millisUntilFinished) {
                 String s;
@@ -103,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
             correct++;
 
             review.setText("Correct Answer");
+
         }
         else{
             review.setText("Wrong Answer");
@@ -110,12 +111,12 @@ public class MainActivity extends AppCompatActivity {
         review.setVisibility(View.VISIBLE);
         total++;
         score.setText(correct+"/"+total);
-        if(review.getVisibility()==View.VISIBLE)
-            review.setVisibility(View.INVISIBLE);
-
-
-        if(playAgain.getVisibility()==View.VISIBLE)
-            playAgain.setVisibility(View.INVISIBLE);
+//        if(review.getVisibility()==View.VISIBLE)
+//            review.setVisibility(View.INVISIBLE);
+//
+//
+//        if(playAgain.getVisibility()==View.VISIBLE)
+//            playAgain.setVisibility(View.INVISIBLE);
 
         Random randomNumber=new Random();
         n1=randomNumber.nextInt(100)+1;
